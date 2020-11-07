@@ -1,10 +1,15 @@
 @import './../../node_modules/bootstrap/scss/bootstrap.scss';
 
-.bg-light{
+.bg-light {
   transition: background-color 0.4s ease;
 
-  &:hover{
+  &:hover {
     background-color: #0099ee !important;
     color: white;
   }
+}
+
+li.transit {
+  opacity: 0.5;
+  transition: .4s ease-in;
 }

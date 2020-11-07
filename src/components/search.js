@@ -3,12 +3,13 @@ import { html } from 'lit-html';
 
 const doSearch = (event) => {
     const str = event.target.value.toLowerCase();
-    console.log(str);
+    //console.log(str);
 
     const ce = new CustomEvent('usersearch',{
         bubbles: true,
-        details: str, // details puo essere usato per passare dati
+        detail: str // details puo essere usato per passare dati
     });
+    document.dispatchEvent(ce);
 }
 
 const search = (userValue = '') => html`
